@@ -26,11 +26,11 @@ app.get("/server-admin", function (request, response) {
 
 
 app.use("/api", indexRoutes);
-app.use("/", homeRoutes);
-app.use("/", authorRoutes);
-app.use("/", userRoutes);
+app.use("/api", homeRoutes);
+app.use("/api", authorRoutes);
+app.use("/api", userRoutes);
 app.use("/api/register", RegisterRoutes);
-app.use("/", LoginRoutes);
+app.use("/api", LoginRoutes);
 app.use("/api/password-reset", PasswordResetRoutes);
 app.use('public/uploads',express.static("../project2/public/uploads"))
 
