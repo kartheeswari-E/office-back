@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const db = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://ijres_1234:infodazz_ijres.@cluster0.mi9vc6o.mongodb.net/infodazz"
+      "mongodb+srv://kartheeswari:karthiga123password1@cluster0.iwhgked.mongodb.net"
     );
     console.log("Db connection established.");
   } catch (error) {
